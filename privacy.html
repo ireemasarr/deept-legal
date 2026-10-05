@@ -15,7 +15,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#8794a0;
 </style></head><body>
 
 <h1>Gizlilik Politikası</h1>
-<p class="sub">DEEPT mobil uygulaması · Yürürlük tarihi: 22 Ağustos 2026</p>
+<p class="sub">DEEPT mobil uygulaması · Yürürlük tarihi: 5 Ekim 2026</p>
 
 <p>Gizliliğine değer veriyoruz. Bu politika; DEEPT’i (“Uygulama”) kullandığında hangi bilgileri topladığımızı, bunları neden ve nasıl kullandığımızı, kimlerle paylaştığımızı ve verilerin üzerinde sahip olduğun hakları sade bir dille açıklar. Uygulamayı kullanarak bu politikada anlatılan uygulamaları kabul etmiş olursun.</p>
 
@@ -39,7 +39,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#8794a0;
 <li><strong>Hedefler ve vizyon panosu:</strong> yazdığın hedefler, ilerleme sayıların, panoya eklediğin kartlar ve bu kartlara yüklediğin görseller.</li>
 <li><strong>Sınav bilgileri:</strong> takip etmeyi seçtiğin sınavlar ve — girmeyi tercih edersen — beyan ettiğin puan ve sıralaman.</li>
 <li><strong>Şikâyet ve moderasyon kayıtları:</strong> bir içeriği veya kullanıcıyı şikâyet ettiğinde ya da birini engellediğinde oluşan kayıtlar; hakkında bir yaptırım uygulanmışsa (uyarı, susturma, erişim kısıtı) bunun kaydı.</li>
-<li><strong>Bildirim jetonu:</strong> hatırlatma bildirimleri gönderebilmemiz için cihazının bildirim jetonu.</li>
+<li><strong>Bildirim jetonu:</strong> hatırlatma ve yeni mesaj bildirimleri gönderebilmemiz için cihazının bildirim jetonu. Bir mesaj bildirimi, gönderenin adını ve mesajın kısa bir önizlemesini içerir.</li>
 <li><strong>Temel teknik veriler:</strong> oturumun ve Uygulamanın düzgün çalışması için gereken asgari cihaz bilgileri; hangi ekranları açtığın ve karşılaştığın hatalar gibi temel kullanım kayıtları.</li>
 <li><strong>Çökme ve teşhis verileri:</strong> Uygulama beklenmedik şekilde kapandığında oluşan hata raporları (hatanın türü, oluştuğu yer, uygulama sürümü ve cihaz modeli gibi teknik bilgiler). Bu raporlar <strong>Sentry</strong> adlı üçüncü taraf hata izleme hizmetine gönderilir. Sentry’ye <em>ad, e-posta veya IP gibi kimlik bilgisi göndermeyecek</em> şekilde yapılandırılmıştır ve veriler <strong>Avrupa Birliği</strong>’nde saklanır.</li>
 <li><strong>Reklam kimliği:</strong> Google AdMob, cihazının reklam kimliğini (iOS’ta IDFA, Android’de AAID) kullanır. Ayrıntılar için aşağıdaki “Reklamlar” bölümüne bak.</li>
@@ -67,7 +67,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#8794a0;
 <p>Hedeflerin, vizyon panon, özel mesajların ve ders notların yalnızca sana özeldir; diğer kullanıcılar bunları göremez.</p>
 
 <h2>Şikâyet, engelleme ve moderasyon</h2>
-<p>Topluluğu güvenli tutmak için kullanıcılar birbirinin içeriğini şikâyet edebilir ve birbirini engelleyebilir. Bir gönderiyi ya da mesajı şikâyet ettiğinde; şikâyet edilen içerik, şikâyeti yapan hesap ve zaman bilgisi bir <strong>şikâyet kaydı</strong> olarak saklanır ve tarafımızca incelenir.</p>
+<p>Topluluğu güvenli tutmak için kullanıcılar birbirinin içeriğini şikâyet edebilir ve birbirini engelleyebilir. Bir gönderiyi ya da mesajı şikâyet ettiğinde; şikâyet edilen içerik, şikâyeti yapan hesap ve zaman bilgisi bir <strong>şikâyet kaydı</strong> olarak saklanır ve tarafımızca incelenir. Birini engellediğinde de bu durum incelememiz için kaydedilir. Profil fotoğrafları ve topluluk görselleri paylaşılmadan önce otomatik uygunluk denetiminden geçer; uygunsuz bulunan görsel yayınlanmaz.</p>
 <p>İnceleme sonucunda kurallara aykırı içeriği kaldırabilir; ilgili hesaba <strong>uyarı, geçici susturma veya erişim kısıtı (men)</strong> gibi yaptırımlar uygulayabiliriz. Bu yaptırım kayıtları, aynı davranışın tekrarını değerlendirebilmek ve kötüye kullanımı önleyebilmek amacıyla saklanır. Birini engellediğinde bu tercih de hesabında kayıtlıdır; engeli <em>Profil → Gizlilik → Engellenen kişiler</em> bölümünden kaldırabilirsin.</p>
 
 <h2>Bilgileri kimlerle paylaşıyoruz</h2>
@@ -75,9 +75,12 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#8794a0;
 <ul>
 <li><strong>Supabase</strong> — veritabanı, kimlik doğrulama ve dosya barındırma altyapımız.</li>
 <li><strong>Google AdMob</strong> — reklam sunumu (reklam kimliği ve reklam gösterim verisi).</li>
+<li><strong>Google Cloud Vision</strong> — yüklediğin profil fotoğrafının ve topluluk görsellerinin uygunsuz içerik (çıplaklık, şiddet vb.) açısından otomatik denetimi. Görsel yalnızca bu denetim için gönderilir.</li>
+<li><strong>Expo</strong> — anlık bildirimlerin cihazına iletilmesi (bildirim jetonu, gönderen adı ve mesaj önizlemesi).</li>
 <li><strong>Sentry</strong> — çökme ve hata izleme. Yalnızca teknik teşhis verisi alır; kimlik bilgisi göndermeyecek şekilde yapılandırılmıştır ve verileri <strong>Avrupa Birliği</strong>’nde saklar.</li>
 <li><strong>Apple ve Google</strong> — giriş, bildirim ve mağaza hizmetleri.</li>
 </ul>
+<p>Bu sağlayıcıların bir kısmı (örneğin Google ve Expo) verileri Türkiye dışında, ağırlıklı olarak ABD’de işler; bu aktarım, yürürlükteki mevzuatın öngördüğü güvencelerle yapılır.</p>
 <p>Bunun dışında, yalnızca yasal bir yükümlülük söz konusu olduğunda bilgi paylaşırız.</p>
 
 <h2>Verilerin saklanması ve saklama süreleri</h2>

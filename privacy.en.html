@@ -15,7 +15,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#8794a0;
 </style></head><body>
 
 <h1>Privacy Policy</h1>
-<p class="sub">DEEPT mobile app · Effective: 22 August 2026</p>
+<p class="sub">DEEPT mobile app · Effective: 5 October 2026</p>
 
 <p>We care about your privacy. This policy explains, in plain language, what information we collect when you use DEEPT (the “App”), why and how we use it, who we share it with, and the rights you have over your data. By using the App, you agree to the practices described here.</p>
 
@@ -39,7 +39,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#8794a0;
 <li><strong>Goals and vision board:</strong> the goals you write, your progress counts, the cards you add to your board and any images you upload to them.</li>
 <li><strong>Exam information:</strong> the exams you choose to follow and — if you choose to enter it — the score and rank you report.</li>
 <li><strong>Reports and moderation records:</strong> records created when you report content or a user, or block someone; and, if an enforcement action was taken about your account (warning, mute, restriction), the record of it.</li>
-<li><strong>Push token:</strong> your device push token, so we can send reminder notifications.</li>
+<li><strong>Push token:</strong> your device push token, so we can send reminder and new-message notifications. A message notification contains the sender’s name and a short preview of the message.</li>
 <li><strong>Basic technical data:</strong> the minimal device information needed for your session and the App to run properly, plus basic usage records such as which screens you open and errors you encounter.</li>
 <li><strong>Crash and diagnostic data:</strong> error reports generated when the App closes unexpectedly (the type of error, where it happened, the app version and device model). These reports are sent to <strong>Sentry</strong>, a third-party error monitoring service. Sentry is configured <em>not to receive identifying information such as your name, email or IP address</em>, and the data is stored in the <strong>European Union</strong>.</li>
 <li><strong>Advertising identifier:</strong> Google AdMob uses your device advertising identifier (IDFA on iOS, AAID on Android). See the “Advertising” section below.</li>
@@ -67,7 +67,7 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#8794a0;
 <p>Your goals, vision board, direct messages and study notes are private to you; other users cannot see them.</p>
 
 <h2>Reporting, blocking and moderation</h2>
-<p>To keep the community safe, users can report each other’s content and block each other. When you report a post or a message, the reported content, the reporting account and the time are stored as a <strong>report record</strong> and reviewed by us.</p>
+<p>To keep the community safe, users can report each other’s content and block each other. When you report a post or a message, the reported content, the reporting account and the time are stored as a <strong>report record</strong> and reviewed by us. When you block someone, this is also recorded for our review. Profile photos and community images are automatically screened before they are published; an image found to be objectionable is not published.</p>
 <p>Following that review we may remove content that breaks the rules and apply enforcement to the account involved, such as a <strong>warning, a temporary mute, or a ban</strong>. These enforcement records are retained so we can assess repeated behaviour and prevent abuse. When you block someone, that choice is also stored on your account; you can remove a block under <em>Profile → Privacy → Blocked people</em>.</p>
 
 <h2>Who we share it with</h2>
@@ -75,9 +75,12 @@ footer{margin-top:48px;padding-top:18px;border-top:1px solid #eee;color:#8794a0;
 <ul>
 <li><strong>Supabase</strong> — our database, authentication and file hosting infrastructure.</li>
 <li><strong>Google AdMob</strong> — ad serving (advertising identifier and ad delivery data).</li>
+<li><strong>Google Cloud Vision</strong> — automatic screening of the profile photos and community images you upload for objectionable content (such as nudity or violence). Images are sent only for this check.</li>
+<li><strong>Expo</strong> — delivering push notifications to your device (push token, sender name and message preview).</li>
 <li><strong>Sentry</strong> — crash and error monitoring. It receives technical diagnostic data only, is configured not to receive identifying information, and stores its data in the <strong>European Union</strong>.</li>
 <li><strong>Apple and Google</strong> — sign-in, notifications and store services.</li>
 </ul>
+<p>Some of these providers (for example Google and Expo) process data outside Türkiye, mainly in the United States; such transfers are made with the safeguards required by applicable law.</p>
 <p>Beyond this, we share information only where legally required.</p>
 
 <h2>Data retention</h2>
